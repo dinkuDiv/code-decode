@@ -18,24 +18,25 @@ export default function Landing({ onFinish }: { onFinish: () => void }) {
     tl.fromTo(
       ".landing-title",
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" },
+      { opacity: 1, y: 0, duration: 0.75, ease: "power3.out" },
     )
       .fromTo(
         ".landing-sub",
         { opacity: 0 },
-        { opacity: 1, duration: 1 },
+        { opacity: 1, duration: 0.3 },
         "-=0.5",
       )
       .to(".landing-container", {
         opacity: 0,
-        duration: 1,
-        delay: 1,
+        duration: 0,
+        delay: 0,
       });
   }, [onFinish]);
 
   return (
     <div ref={containerRef} className="landing-container">
-      <h1 className="landing-title">Code-Decode</h1>
+      <h1 className="landing-title">developed by DINKU</h1>
+      <p className="landing-sub">Code-Decode</p>
       <p className="landing-sub">Encrypt. Decode. Have Fun.</p>
     </div>
   );

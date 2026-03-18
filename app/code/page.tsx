@@ -244,7 +244,9 @@ export default function CodePage() {
           </div>
 
           <div id="branding">
-            <a href="#">Don't Click!</a>
+            <a href="https://www.youtube.com/watch?v=oofSnsGkops&list=RDoofSnsGkops&start_radio=1">
+              Don't Click!
+            </a>
           </div>
         </div>
       </section>

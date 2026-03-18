@@ -6,7 +6,7 @@ import Landing from "./components/Landing";
 
 export default function Home() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
-  const [showLanding, setShowLanding] = useState(true);
+  const [showLanding, setShowLanding] = useState(false);
 
   const applyDarkTheme = () => {
     const root = document.documentElement;
@@ -34,6 +34,15 @@ export default function Home() {
 
     if (saved === "light") applyLightTheme();
     else applyDarkTheme();
+  }, []);
+
+  useEffect(() => {
+    const hasSeenLanding = sessionStorage.getItem("seenLanding");
+
+    if (!hasSeenLanding) {
+      setShowLanding(true);
+      sessionStorage.setItem("seenLanding", "true");
+    }
   }, []);
 
   if (showLanding) {
@@ -104,7 +113,9 @@ export default function Home() {
           </div>
 
           <div id="branding">
-            <a href="#">Don't Click!</a>
+            <a href="https://www.youtube.com/watch?v=oofSnsGkops&list=RDoofSnsGkops&start_radio=1">
+              Don't Click!
+            </a>
           </div>
         </div>
       </section>
