@@ -98,7 +98,18 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
+      <section id="rolling-section">
+        <div className="rolling-container">
+          <a
+            href="https://open.spotify.com/track/29gHxv2Z0JiDPJfBv743hc?si=c2c46c34579c43ce"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rolling-wrapper"
+          >
+            <img src="/roll.png" className="rolling-img" alt="rolling" />
+          </a>
+        </div>
+      </section>
       <section id="footer">
         <div>
           <div
@@ -117,18 +128,6 @@ export default function Home() {
               Don't Click!
             </a>
           </div>
-        </div>
-      </section>
-      <section id="rolling-section">
-        <div className="rolling-container">
-          <a
-            href="https://open.spotify.com/track/29gHxv2Z0JiDPJfBv743hc?si=c2c46c34579c43ce"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rolling-wrapper"
-          >
-            <img src="/roll.png" className="rolling-img" alt="rolling" />
-          </a>
         </div>
       </section>
     </>
