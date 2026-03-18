@@ -247,7 +247,7 @@ export default function DecodePage() {
           </div>
 
           <div id="branding">
-            <a href="https://www.youtube.com/watch?v=oofSnsGkops&list=RDoofSnsGkops&start_radio=1">
+            <a href="https://www.youtube.com/watch?v=QrwpyID427E&list=RDQrwpyID427E&start_radio=1">
               Don't Click!
             </a>
           </div>

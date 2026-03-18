@@ -319,3 +319,59 @@ section {
   color: var(--d-color);
   opacity: 0.7;
 }
+/* ---------- rolling-section ---------- */
+
+#rolling-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* container = 80% of screen */
+.rolling-container {
+  width: 80vw;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* wrapper moves horizontally */
+.rolling-wrapper {
+  position: absolute;
+  left: 0;
+  top: 20px;
+
+  animation: moveLR 5s linear infinite alternate;
+}
+
+/* image rotates */
+.rolling-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  animation: spin 4s linear infinite;
+}
+
+/* 🔥 FIXED horizontal movement */
+@keyframes moveLR {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(80vw - 100px));
+  }
+}
+
+/* rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

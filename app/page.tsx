@@ -113,10 +113,22 @@ export default function Home() {
           </div>
 
           <div id="branding">
-            <a href="https://www.youtube.com/watch?v=oofSnsGkops&list=RDoofSnsGkops&start_radio=1">
+            <a href="https://www.youtube.com/watch?v=QrwpyID427E&list=RDQrwpyID427E&start_radio=1">
               Don't Click!
             </a>
           </div>
+        </div>
+      </section>
+      <section id="rolling-section">
+        <div className="rolling-container">
+          <a
+            href="https://open.spotify.com/track/29gHxv2Z0JiDPJfBv743hc?si=c2c46c34579c43ce"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rolling-wrapper"
+          >
+            <img src="/roll.png" className="rolling-img" alt="rolling" />
+          </a>
         </div>
       </section>
     </>
