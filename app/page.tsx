@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Landing from "./components/Landing";
+// import Landing from "./components/Landing";
 
 export default function Home() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
-  const [showLanding, setShowLanding] = useState(false);
+  // const [showLanding, setShowLanding] = useState(false);
 
   const applyDarkTheme = () => {
     const root = document.documentElement;
@@ -36,18 +36,18 @@ export default function Home() {
     else applyDarkTheme();
   }, []);
 
-  useEffect(() => {
-    const hasSeenLanding = sessionStorage.getItem("seenLanding");
+  // useEffect(() => {
+  //   const hasSeenLanding = sessionStorage.getItem("seenLanding");
 
-    if (!hasSeenLanding) {
-      setShowLanding(true);
-      sessionStorage.setItem("seenLanding", "true");
-    }
-  }, []);
+  //   if (!hasSeenLanding) {
+  //     setShowLanding(true);
+  //     sessionStorage.setItem("seenLanding", "true");
+  //   }
+  // }, []);
 
-  if (showLanding) {
-    return <Landing onFinish={() => setShowLanding(false)} />;
-  }
+  // if (showLanding) {
+  //   return <Landing onFinish={() => setShowLanding(false)} />;
+  // }
 
   return (
     <>
